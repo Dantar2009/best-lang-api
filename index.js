@@ -9,7 +9,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-// Создание таблиц и заполнение языков
 try {
     await pool.query(`
         CREATE TABLE IF NOT EXISTS languages (
